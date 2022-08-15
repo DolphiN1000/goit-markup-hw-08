@@ -1,0 +1,34 @@
+.description__text {
+  display: block;
+  @include font(400, 14px, 24px);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+  color: var(--main-color);
+}
+
+.description__item {
+  display: flex;
+  gap: 30px;
+}
+
+.description__list {
+  &::before {
+    margin-bottom: 30px;
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--backgronud-button-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 4px;
+  }
+
+  @each $pos, $des-icon in $desciption-icons {
+    &:nth-child(#{$pos}):before {
+      //  content: "";
+      background-image: url(../images/#{$des-icon}.svg);
+    }
+  }
+}

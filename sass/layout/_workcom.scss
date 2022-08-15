@@ -1,0 +1,47 @@
+.workcom__list {
+  display: flex;
+  gap: 30px;
+}
+
+.workcom__title {
+  @include font(700,36px,42px);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.16;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.workcom__section {
+  padding-top: 0px;
+}
+
+.workcom__thumb {
+  position: relative;
+}
+
+.workcom__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--workcom-background-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+}
+
+.workcom {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: var(--box-shadow-modal);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-workcom {
+  padding-top: 0;
+}
