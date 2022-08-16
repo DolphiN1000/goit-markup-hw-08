@@ -3,7 +3,21 @@
 }
 
 .subscribe {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+
+  }
 }
 
 .subscribe__email {
@@ -14,10 +28,24 @@
   transition: var(--transition-border-color-funk);
   padding: 15px 16px;
   margin-right: 12px;
-  width: 358px;
+
   background-color: transparent;
   font-size: 16px;
   color: var(--main-light-color);
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   &:hover,
   &:focus {

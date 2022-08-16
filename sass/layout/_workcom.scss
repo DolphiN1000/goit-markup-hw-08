@@ -1,6 +1,23 @@
 .workcom__list {
-  display: flex;
-  gap: 30px;
+ 
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex; 
+    gap: 30px;
+  }
+
+
 }
 
 .workcom__title {

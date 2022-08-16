@@ -8,10 +8,25 @@
 }
 
 .description__item {
-  display: flex;
+
+
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
   gap: 30px;
 }
-
+}
 .description__list {
   &::before {
     margin-bottom: 30px;

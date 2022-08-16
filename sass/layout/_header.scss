@@ -1,9 +1,28 @@
 .header__container {
-  display: flex;
-  width: 1200px;
+
+ 
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+  }
+
+
+
+
 }
 
 .header__section {
@@ -50,6 +69,8 @@
   color: var(--main-color);
   transition: var(--transition-color-link-func);
 
+  
+
   &:hover,
   &:focus {
     color: var(--current-color);
@@ -72,13 +93,31 @@
 
 .header__nav-site {
   margin-right: auto;
-  display: flex;
-  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__contact {
   display: flex;
   flex-direction: row;
+
+  
+
 }
 
 .nav {

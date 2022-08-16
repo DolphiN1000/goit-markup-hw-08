@@ -119,10 +119,24 @@ a {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .description-icon {
@@ -136,9 +150,22 @@ a {
   margin-bottom: 30px;
 }
 
-.workcom__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .workcom__list {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .workcom__list {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .workcom__list {
+    width: 1200px;
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .workcom__title {
@@ -209,8 +236,22 @@ a {
   text-align: center;
 }
 
-.clients-list {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .clients-list {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list {
+    width: 768px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    width: 1200px;
+    display: flex;
+  }
 }
 
 .clients-item:not(:last-child) {
@@ -238,11 +279,25 @@ a {
 }
 
 .header__container {
-  display: flex;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .header__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    width: 1200px;
+    display: flex;
+  }
 }
 
 .header__section {
@@ -306,8 +361,25 @@ a {
 
 .header__nav-site {
   margin-right: auto;
-  display: flex;
-  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .header__nav-site {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__nav-site {
+    width: 768px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav-site {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__contact {
@@ -353,14 +425,26 @@ a {
 }
 
 .footer__section {
-  /* display: flex; */
   padding: 60px 0;
   background-color: var(--background-dark-color);
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 480px) {
+  .footer__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .conect__title {
@@ -753,8 +837,21 @@ a {
   margin-left: auto;
 }
 
-.subscribe {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .subscribe {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: 1200px;
+    display: flex;
+  }
 }
 
 .subscribe__email {
@@ -765,10 +862,24 @@ a {
   transition: var(--transition-border-color-funk);
   padding: 15px 16px;
   margin-right: 12px;
-  width: 358px;
   background-color: transparent;
   font-size: 16px;
   color: var(--main-light-color);
+}
+@media screen and (min-width: 480px) {
+  .subscribe__email {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__email {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    width: 358px;
+  }
 }
 .subscribe__email:hover, .subscribe__email:focus {
   border-color: var(--current-color);
@@ -814,9 +925,22 @@ a {
   color: var(--main-color);
 }
 
-.description__item {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .description__item {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .description__item {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description__item {
+    width: 1200px;
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .description__list::before {
