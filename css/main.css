@@ -114,18 +114,26 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -138,7 +146,6 @@ a {
     width: 1200px;
   }
 }
-
 .description-icon {
   display: flex;
   width: 270px;
@@ -397,20 +404,20 @@ a {
 }
 
 .hero {
-  width: 696px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--main-light-color);
 }
 
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--background-dark-color);
   text-align: center;
   background-color: #c4c4c4;
@@ -419,11 +426,34 @@ a {
   background-repeat: no-repeat;
   /* background-clip: padding-box; */
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    height: 400px;
+  }
+  .hero {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+  }
+}
 .footer__section {
   padding: 60px 0;
   background-color: var(--background-dark-color);
@@ -925,29 +955,11 @@ a {
   color: var(--main-color);
 }
 
-@media screen and (min-width: 480px) {
-  .description__item {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .description__item {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .description__item {
-    width: 1200px;
-    display: flex;
-    gap: 30px;
-  }
-}
-
 .description__list::before {
   margin-bottom: 30px;
-  display: inline-block;
+  display: block;
   content: "";
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--backgronud-button-color);
   background-repeat: no-repeat;
@@ -967,6 +979,26 @@ a {
   background-image: url(../images/astronaut.svg);
 }
 
+@media screen and (min-width: 480px) {
+  .description__text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .description__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .description__list {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description__list {
+    width: 270px;
+  }
+}
 .main-logo {
   color: var(--main-dark-color);
   font-family: "Raleway";
