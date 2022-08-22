@@ -204,17 +204,11 @@ a {
     text-transform: uppercase;
     color: var(--main-light-color);
   }
-  .workcom {
-    width: 270px;
-    background: #ffffff;
-    box-shadow: var(--box-shadow-modal);
-    border-radius: 0px 0px 4px 4px;
-  }
   .section-workcom {
     padding-top: 0;
   }
 }
-.section-command {
+.command__section {
   background-color: var(--backgronud-button-color);
 }
 
@@ -227,9 +221,8 @@ a {
 }
 
 .command__list {
-  width: 1200px;
-  display: flex;
-  gap: 30px;
+  width: 450px;
+  height: 622px;
 }
 
 .name {
@@ -254,48 +247,73 @@ a {
   text-align: center;
 }
 
+.command__item {
+  background: #ffffff;
+  box-shadow: var(--box-shadow-modal);
+  border-radius: 0px 0px 4px 4px;
+}
+
 @media screen and (min-width: 480px) {
-  .clients-list {
-    max-width: 480px;
+  .command__list {
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  .clients-list {
-    width: 768px;
+  .command__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients-list {
+  .command__list {
     width: 1200px;
-    display: flex;
+  }
+  .command__item {
+    width: 270px;
   }
 }
-
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+.clients__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
+  gap: 30px;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
   color: var(--social-icon-color);
   transition: var(--transition-border-color-funk), var(--transition-color-link-func);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--current-color);
   border: 1px solid var(--current-color);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
+  .clients__list {
+    width: 1200px;
+    flex-wrap: nowrap;
+  }
+}
 .header__container {
   padding-left: 15px;
   padding-right: 15px;

@@ -1,4 +1,4 @@
-.section-command {
+.command__section {
   background-color: var(--backgronud-button-color);
 }
 .command__title {
@@ -7,10 +7,14 @@
   text-align: center;
 }
 .command__list {
-  width: 1200px;
-  display: flex;
-  gap: 30px;
+  width: 450px;
+  height: 622px;
 }
+
+// .command__item:nth-child {
+//   margin-bottom: 30px;
+// }
+
 .name {
   margin-bottom: 10px;
   @include font(500, 16px, 19px);
@@ -27,4 +31,47 @@
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.command__item {
+ 
+  background: #ffffff;
+  box-shadow: var(--box-shadow-modal);
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 480px) {
+
+  .command__list {
+    width: 450px;
+  
+  }
+  // .command__item {
+  //   width: 450px;
+  // }
+}
+
+@media screen and (min-width: 768px) {
+
+  .command__list {
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  // .command__item {
+  //   width: 354px;
+  // }
+
+}
+@media screen and (min-width: 1200px) {
+
+  .command__list {
+    width: 1200px;
+
+  }
+
+  .command__item {
+    width: 270px;
+  }
 }

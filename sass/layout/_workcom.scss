@@ -13,6 +13,8 @@
   }
 }
 
+
+
 @media screen and (min-width: 1200px) {
   .workcom__list {
     width: 1200px;
@@ -49,12 +51,7 @@
     color: var(--main-light-color);
   }
 
-  .workcom {
-    width: 270px;
-    background: #ffffff;
-    box-shadow: var(--box-shadow-modal);
-    border-radius: 0px 0px 4px 4px;
-  }
+
 
   .section-workcom {
     padding-top: 0;
