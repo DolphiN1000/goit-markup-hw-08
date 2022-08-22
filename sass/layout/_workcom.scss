@@ -1,64 +1,62 @@
-.workcom__list {
- 
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    
+@media screen and (max-width: 1199px) {
+  .section-workcom {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
+}
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    
-  }
-
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .workcom__list {
     width: 1200px;
-    display: flex; 
+    display: flex;
     gap: 30px;
   }
 
+  .workcom__title {
+    @include font(700, 36px, 42px);
+    color: var(--secondary-color);
+    text-align: center;
+  }
 
-}
+  .workcom__section {
+    padding-top: 0px;
+  }
 
-.workcom__title {
-  @include font(700,36px,42px);
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.16;
-  color: var(--secondary-color);
-  text-align: center;
-}
+  .workcom__thumb {
+    position: relative;
+  }
 
-.workcom__section {
-  padding-top: 0px;
-}
+  .workcom__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--workcom-background-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+  }
 
-.workcom__thumb {
-  position: relative;
-}
+  .workcom {
+    width: 270px;
+    background: #ffffff;
+    box-shadow: var(--box-shadow-modal);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-.workcom__text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  background-color: var(--workcom-background-color);
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--main-light-color);
-}
-
-.workcom {
-  width: 270px;
-  background: #ffffff;
-  box-shadow: var(--box-shadow-modal);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.section-workcom {
-  padding-top: 0;
+  .section-workcom {
+    padding-top: 0;
+  }
 }
