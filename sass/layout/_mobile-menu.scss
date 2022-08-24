@@ -18,9 +18,9 @@
   left: 0;
   background-color: var(--main-light-color);
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  // opacity: 0;
-  // visibility: hidden;
-  // pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition: var(--transition-opaciti-visibiliti);
 }
 
@@ -46,7 +46,6 @@
 .mobile__container{
 display: flex;
 flex-direction: column;
-// align-content: space-between;
 
 
 }
