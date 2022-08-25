@@ -2,11 +2,17 @@
   color: var(--main-dark-color);
   font-family: "Raleway";
   font-style: normal;
-  @include font(700,26px,31px);
-  // font-size: 26px;
-  // font-weight: 700;
-  // line-height: 1.19;
+  @include font(700,24px,28px);
   text-align: center;
   padding: 0;
   margin-right: 93px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width:1200px) {
+  
+  .main-logo {
+    @include font(700,26px,31px);
+}
 }

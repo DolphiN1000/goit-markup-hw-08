@@ -148,21 +148,11 @@ a {
   }
 }
 .header__container {
-  display: flex;
-  width: 1200px;
+  position: relative;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
-  .nav__link {
-    display: none;
-  }
-  .contact__link {
-    display: none;
-  }
-}
 .header__section {
   border-bottom: 1px solid var(--header-border-color);
 }
@@ -228,27 +218,71 @@ a {
   align-items: center;
 }
 
-.nav__contact {
-  display: flex;
-  flex-direction: row;
-}
-
 .nav {
   display: flex;
   padding-top: 32px;
 }
 
-.contact__item + .contact__item {
-  margin-left: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu-open {
+@media screen and (max-width: 767px) {
+  .nav {
     display: none;
+  }
+  .nav__item {
+    display: none;
+  }
+  .contact__link {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    width: 768px;
+  }
+  .nav__contact {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .contact__item + .contact__item {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    width: 1200px;
+  }
+  .nav__contact {
+    display: flex;
+    align-items: center;
+  }
+  .contact__item + .contact__item {
+    margin-left: 30px;
+    margin-top: 0;
   }
 }
 .mobile-menu-open {
   position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+  transition: fill 250ms linear 0ms, transform 250mss linear 0ms;
+  transition-property: fill, transform;
+  transition-duration: 0.25s, 0.25s;
+  transition-timing-function: linear, linear;
+  transition-delay: 0s, 0s;
+}
+.mobile-menu-open:hover, .mobile-menu-open:focus {
+  transform: rotate(1800deg);
 }
 
 .mobile-menu {
@@ -282,18 +316,9 @@ a {
   position: absolute;
   top: 10px;
   right: 15px;
-  background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
-}
-
-.mobile__container {
-  display: flex;
-  flex-direction: column;
-}
-
-.mobile-menu__close-button {
   background-color: transparent;
   transition: fill 250ms linear 0ms, transform 250mss linear 0ms;
   transition-property: fill, transform;
@@ -304,6 +329,11 @@ a {
 .mobile-menu__close-button:hover, .mobile-menu__close-button:focus {
   transform: rotate(1800deg);
   fill: var(--current-color);
+}
+
+.mobile__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-nav__item:not(:last-child) {
@@ -365,6 +395,17 @@ a {
   line-height: 1.2222222222;
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-open {
+    display: none;
+  }
+}
 .description-icon {
   display: flex;
   width: 270px;
@@ -509,7 +550,7 @@ a {
   gap: 30px;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  width: calc(50vw - 30px);
   height: 92px;
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
@@ -525,6 +566,11 @@ a {
   fill: currentColor;
 }
 
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
@@ -992,13 +1038,20 @@ a {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   color: var(--secondary-color);
   text-align: center;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 .subscribe__container {
   margin-left: auto;
 }
@@ -1140,13 +1193,22 @@ a {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   text-align: center;
   padding: 0;
   margin-right: 93px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
+@media screen and (min-width: 1200px) {
+  .main-logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
+}
 .section-work {
   background-color: var(--main-light-color);
 }

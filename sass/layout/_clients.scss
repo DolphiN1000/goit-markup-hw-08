@@ -14,8 +14,9 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+  width: calc(50vw - 30px);
   // width: calc((100%/2) - 30px);
-  width: 210px;
+  // width: calc((100% - 60px)/2);
   height: 92px;
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
@@ -35,9 +36,9 @@
 
 @media screen and (min-width: 480px) {
 
-// .clients__link{
-//   width: calc((100vw/2) - 30px);
-// }
+.clients__link{
+  width: 210px;
+}
 
 }
 
