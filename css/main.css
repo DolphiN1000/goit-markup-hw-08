@@ -473,11 +473,6 @@ a {
   background-color: var(--backgronud-button-color);
 }
 
-.command__list {
-  width: 450px;
-  height: 622px;
-}
-
 .name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -506,11 +501,6 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .command__list {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 768px) {
   .command__list {
     display: flex;
