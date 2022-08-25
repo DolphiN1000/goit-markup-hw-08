@@ -473,14 +473,6 @@ a {
   background-color: var(--backgronud-button-color);
 }
 
-.command__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  color: var(--secondary-color);
-  text-align: center;
-}
-
 .command__list {
   width: 450px;
   height: 622px;

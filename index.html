@@ -102,7 +102,9 @@
                 >
               </li>
               <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+                <a class="mobile-nav__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="mobile-nav__item">
                 <a class="mobile-nav__link" href="./contact.html">Контакти</a>
@@ -225,17 +227,71 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section command__section">
+      <section class="section command__section">
         <div class="container">
           <h2 class="command__title title">Наша команда</h2>
           <ul class="command__list list">
             <li class="command__item">
-              <img
-                src="./images/Igor-Demyanenko.jpg"
-                alt="Игорь Демьяненко - Дизайнер продукта"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Igor-Demyanenko-desk.webp    1x,
+                    ./images/Igor-Demyanenko-desk@2x.webp 2x,
+                    ./images/Igor-Demyanenko-desk@3x.webp 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+               
+                />
+                <source
+                  srcset="
+                    ./images/Igor-Demyanenko-desk.jpg    1x,
+                    ./images/Igor-Demyanenko-desk@2x.jpg 2x,
+                    ./images/Igor-Demyanenko-desk@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+       
+                />
+
+                <source
+                  srcset="
+                    ./images/Igor-Demyanenko-tab.webp    1x,
+                    ./images/Igor-Demyanenko-tab@2x.webp 2x,
+                    ./images/Igor-Demyanenko-tab@3x.webp 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/Igor-Demyanenko-tab.jpg    1x,
+                    ./images/Igor-Demyanenko-tab@2x.jpg 2x,
+                    ./images/Igor-Demyanenko-tab@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Igor-Demyanenko-mob.webp    1x,
+                    ./images/Igor-Demyanenko-mob@2x.webp 2x,
+                    ./images/Igor-Demyanenko-mob@3x.webp 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/Igor-Demyanenko-mob.jpg    1x,
+                    ./images/Igor-Demyanenko-mob@2x.jpg 2x,
+                    ./images/Igor-Demyanenko-mob@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/Igor-Demyanenko-mob.jpg"
+                  alt="Игорь Демьяненко - Дизайнер продукта"
+                />
+              </picture>
               <div class="name-prof">
                 <h3 class="name">Игорь Демьяненко</h3>
                 <p class="prof" lang="en">Product Designer</p>
@@ -274,7 +330,7 @@
             <li class="command__item">
               <img
                 src="./images/Olga-Repina.jpg"
-                alt="Ольга Репина - Фронтенд-разработчик"
+                alt="Ольга Репина - Фронтенд-розробник"
                 width="270"
                 height="260"
               />
@@ -399,7 +455,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="section clients">
         <div class="container">
           <h2 class="clients__text title">Постійні клієнти</h2>
