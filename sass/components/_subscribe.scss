@@ -1,25 +1,3 @@
-.subscribe__container {
-  margin-left: auto;
-}
-
-.subscribe {
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-    
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    display: flex;
-
-  }
-}
-
 .subscribe__email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -27,25 +5,11 @@
   height: 50px;
   transition: var(--transition-border-color-funk);
   padding: 15px 16px;
-  margin-right: 12px;
+ 
 
   background-color: transparent;
   font-size: 16px;
   color: var(--main-light-color);
-
-  @media screen and (min-width: 480px) {
-    max-width: 450px;
-    
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 450px;
-    
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-  }
 
   &:hover,
   &:focus {
@@ -76,11 +40,12 @@
 }
 
 .submit__button {
+
   display: flex;
   align-items: center;
   background-color: var(--current-color);
   color: var(--main-light-color);
-  @include font(700,16px,30px);
+  @include font(700, 16px, 30px);
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -88,5 +53,44 @@
   &:focus {
     background-color: var(--button-hero-hover-color);
     color: var(--main-dark-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  // .subscribe {
+  //   width: 480px;
+  // }
+
+  .subscribe__email {
+    width: 450px;
+  }
+}
+// @media screen and (min-width: 768px) {
+//   .subscribe {
+//     width: 768px;
+//   }
+//     // .subscribe__email {
+
+//     // }
+
+// }
+@media screen and (max-width: 1199px) {
+.submit__button {
+  margin-left: auto;
+  margin-right: auto;
+}}
+
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: 1200px;
+    display: flex;
+  }
+  .subscribe__email {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .subscribe__container {
+    margin-left: auto;
   }
 }

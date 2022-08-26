@@ -11,9 +11,15 @@
 //   height: 622px;
 // }
 
-// .command__item:nth-child {
-//   margin-bottom: 30px;
-// }
+.command__item:nth-child {
+  margin-bottom: 30px;
+}
+.command__list {
+   
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 .name {
   margin-bottom: 10px;
@@ -35,7 +41,7 @@
 
 .command__item {
  
-  background: #ffffff;
+  background: var(--main-light-color);
   box-shadow: var(--box-shadow-modal);
   border-radius: 0px 0px 4px 4px;
 }

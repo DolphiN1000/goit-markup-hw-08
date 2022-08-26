@@ -473,6 +473,16 @@ a {
   background-color: var(--backgronud-button-color);
 }
 
+.command__item:nth-child {
+  margin-bottom: 30px;
+}
+
+.command__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -496,7 +506,7 @@ a {
 }
 
 .command__item {
-  background: #ffffff;
+  background: var(--main-light-color);
   box-shadow: var(--box-shadow-modal);
   border-radius: 0px 0px 4px 4px;
 }
@@ -655,22 +665,8 @@ a {
   background-color: var(--background-dark-color);
 }
 
-@media screen and (min-width: 480px) {
-  .footer__container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__container {
-    width: 1200px;
-    display: flex;
-    align-items: baseline;
-  }
+.footer__container {
+  display: flex;
 }
 
 .conect__title {
@@ -685,10 +681,6 @@ a {
   gap: 10px;
   padding: 0;
   margin-top: 20px;
-}
-
-.footer__contact {
-  margin-right: 70px;
 }
 
 .footer__social-link {
@@ -755,6 +747,39 @@ a {
   font-style: normal;
 }
 
+@media screen and (min-width: 480px) {
+  .footer__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    width: 768px;
+  }
+  .footer__contact {
+    margin-right: 70px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__contact {
+    margin-bottom: 60px;
+  }
+  .conect {
+    margin-bottom: 60px;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    width: 1200px;
+    align-items: baseline;
+  }
+}
 .portfolio__link {
   display: block;
   transition: var(--transition-box-shadow-func);
@@ -840,8 +865,10 @@ a {
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 609px;
   top: 50%;
   left: 50%;
   background: var(--main-light-color);
@@ -898,12 +925,36 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
   color: var(--secondary-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal-form-check-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
 .modal-form-field {
   width: 100%;
   margin-bottom: 10px;
@@ -1066,27 +1117,6 @@ a {
     line-height: 1.1666666667;
   }
 }
-.subscribe__container {
-  margin-left: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .subscribe {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .subscribe {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .subscribe {
-    width: 1200px;
-    display: flex;
-  }
-}
-
 .subscribe__email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1094,25 +1124,9 @@ a {
   height: 50px;
   transition: var(--transition-border-color-funk);
   padding: 15px 16px;
-  margin-right: 12px;
   background-color: transparent;
   font-size: 16px;
   color: var(--main-light-color);
-}
-@media screen and (min-width: 480px) {
-  .subscribe__email {
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .subscribe__email {
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .subscribe__email {
-    width: 358px;
-  }
 }
 .subscribe__email:hover, .subscribe__email:focus {
   border-color: var(--current-color);
@@ -1150,6 +1164,30 @@ a {
   color: var(--main-dark-color);
 }
 
+@media screen and (min-width: 480px) {
+  .subscribe__email {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .submit__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: 1200px;
+    display: flex;
+  }
+  .subscribe__email {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .subscribe__container {
+    margin-left: auto;
+  }
+}
 .description__text {
   display: block;
   font-weight: 400;
