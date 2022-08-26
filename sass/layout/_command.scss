@@ -15,7 +15,6 @@
   margin-bottom: 30px;
 }
 .command__list {
-   
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -40,17 +39,15 @@
 }
 
 .command__item {
- 
   background: var(--main-light-color);
   box-shadow: var(--box-shadow-modal);
   border-radius: 0px 0px 4px 4px;
 }
 
 @media screen and (min-width: 480px) {
-
   // .command__list {
   //   width: 450px;
-  
+
   // }
   // .command__item {
   //   width: 450px;
@@ -58,9 +55,7 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .command__list {
-   
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -68,13 +63,10 @@
   // .command__item {
   //   width: 354px;
   // }
-
 }
 @media screen and (min-width: 1200px) {
-
   .command__list {
     width: 1200px;
-
   }
 
   .command__item {

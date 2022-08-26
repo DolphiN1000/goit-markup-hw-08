@@ -2,7 +2,7 @@
   color: var(--main-dark-color);
   font-family: "Raleway";
   font-style: normal;
-  @include font(700,24px,28px);
+  @include font(700, 24px, 28px);
   text-align: center;
   padding: 0;
   margin-right: 93px;
@@ -10,9 +10,8 @@
   margin-bottom: 16px;
 }
 
-@media screen and (min-width:1200px) {
-  
+@media screen and (min-width: 1200px) {
   .main-logo {
-    @include font(700,26px,31px);
-}
+    @include font(700, 26px, 31px);
+  }
 }
