@@ -312,6 +312,15 @@ a {
   position: relative;
 }
 
+.mobile__container {
+  padding: 48px 40px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+}
+
 .mobile-menu__close-button {
   position: absolute;
   z-index: 500;
@@ -330,15 +339,6 @@ a {
 .mobile-menu__close-button:hover, .mobile-menu__close-button:focus {
   transform: rotate(1800deg);
   fill: var(--current-color);
-}
-
-.mobile__container {
-  padding: 48px 40px;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-y: scroll;
 }
 
 .mobile-nav {

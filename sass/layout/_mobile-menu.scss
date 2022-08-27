@@ -46,6 +46,14 @@
   // padding: 48px 40px;
   
 }
+.mobile__container {
+  padding: 48px 40px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+}
 .mobile-menu__close-button {
   position: absolute;
   z-index: 500;
@@ -68,14 +76,7 @@
   }
 }
 
-.mobile__container {
-  padding: 48px 40px;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-y: scroll;
-}
+
 
 // mobile-menu__close-icon
 .mobile-nav {
