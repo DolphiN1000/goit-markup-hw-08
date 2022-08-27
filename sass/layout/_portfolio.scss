@@ -72,6 +72,7 @@
   padding: 0;
   margin-bottom: 50px;
   gap: 8px;
+  row-gap: 15px;
   display: flex;
 }
 
@@ -83,6 +84,7 @@
 
 @media screen and (max-width: 767px) {
   .portfolio__buttons {
+    margin-bottom: 40px;
     flex-wrap: wrap;
   }
 }
@@ -92,10 +94,14 @@
   }
   .portfolio__buttons {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: 370px;
+  }
+  .portfolio__buttons {
+    margin-bottom: 50px;
   }
 }

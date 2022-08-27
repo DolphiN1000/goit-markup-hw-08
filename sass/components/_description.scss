@@ -4,6 +4,12 @@
   color: var(--main-color);
 }
 
+// .description__item {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 30px;
+// }
+
 .description__list {
   &::before {
     margin-bottom: 30px;
@@ -25,6 +31,14 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .title__text {
+   text-align: center;    
+  }
+  .description__text:not(last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .description__text {
     width: 100%;

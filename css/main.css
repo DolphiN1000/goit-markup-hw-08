@@ -310,11 +310,11 @@ a {
 
 .mobile-menu__container {
   position: relative;
-  padding: 48px 40px;
 }
 
 .mobile-menu__close-button {
   position: absolute;
+  z-index: 500;
   top: 10px;
   right: 15px;
   border: none;
@@ -333,12 +333,17 @@ a {
 }
 
 .mobile__container {
+  padding: 48px 40px;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .mobile-nav {
-  margin-bottom: 30%;
+  margin-bottom: auto;
+  color: var(--secondary-color);
 }
 
 .mobile-nav__item:not(:last-child) {
@@ -369,6 +374,7 @@ a {
 }
 
 .mobile-contact__link-tel {
+  color: --currentcolor;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
@@ -777,17 +783,13 @@ a {
     width: 768px;
     align-items: baseline;
   }
-  .footer__contact {
-    margin-right: 70px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe__container {
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 1199px) {
-  .footer__contact {
-    margin-bottom: 60px;
-  }
-  .conect {
-    margin-bottom: 60px;
-  }
   .footer__container {
     text-align: center;
   }
@@ -795,10 +797,18 @@ a {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 480px) {
+  .subscribe__email {
+    width: calc(100vw - 30px);
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__container {
     width: 1200px;
     align-items: baseline;
+  }
+  .footer__contact {
+    margin-right: 70px;
   }
 }
 .portfolio__link {
@@ -874,6 +884,7 @@ a {
   padding: 0;
   margin-bottom: 50px;
   gap: 8px;
+  row-gap: 15px;
   display: flex;
 }
 
@@ -885,6 +896,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .portfolio__buttons {
+    margin-bottom: 40px;
     flex-wrap: wrap;
   }
 }
@@ -894,17 +906,22 @@ a {
   }
   .portfolio__buttons {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: 370px;
   }
+  .portfolio__buttons {
+    margin-bottom: 50px;
+  }
 }
 .modal {
   position: absolute;
   width: calc(100% - 30px);
   height: calc(100% - 30px);
+  overflow-y: auto;
   top: 50%;
   left: 50%;
   background: var(--main-light-color);
@@ -1195,6 +1212,7 @@ a {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 28px;
 }
 .submit__button:hover, .submit__button:focus {
   background-color: var(--button-hero-hover-color);
@@ -1256,6 +1274,14 @@ a {
   background-image: url(../images/astronaut.svg);
 }
 
+@media screen and (max-width: 767px) {
+  .title__text {
+    text-align: center;
+  }
+  .description__text:not(last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .description__text {
     width: 100%;
