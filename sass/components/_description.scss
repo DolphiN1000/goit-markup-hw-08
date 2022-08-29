@@ -35,7 +35,7 @@
   .title__text {
    text-align: center;    
   }
-  .description__text:not(last-child) {
+  .description__text:not(:last-child) {
     margin-bottom: 30px;
   }
 }
