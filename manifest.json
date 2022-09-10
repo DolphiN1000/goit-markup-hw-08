@@ -3,22 +3,22 @@
     "name": "SIte made by Liubomyr Voitovych",
     "icons": [
       {
-        "src": "/favicon.svg",
+        "src": "./favicon.svg",
         "type": "image/svg+xml",
         "sizes": "512x512"
       },
       {
-        "src": "/android-chrome-192x192.png",
+        "src": "./android-chrome-192x192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/android-chrome-512x512.png",
+        "src": "./android-chrome-512x512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
-    "start_url": "/?source=pwa",
+    "start_url": "./index.html",
     "background_color": "#3367D6",
     "display": "standalone",
     "scope": "/",
@@ -28,14 +28,14 @@
         "name": "Верстка сайту",
         "short_name": "Сайт",
         "description": "View work of Liubomy Voitovych today",
-        "url": "/today?source=pwa",
+        "url": "/index.html",
         "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
       },
       {
         "name": "portfolio",
         "short_name": "portfolio",
         "description": "View portfolio",
-        "url": "/portfolio?source=pwa",
+        "url": "/portfolio.index.html",
         "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
       }
     ],
